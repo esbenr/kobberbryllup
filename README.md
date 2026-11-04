@@ -10,9 +10,8 @@ byggetrin eller runtime-server.
 - Udfyld gæstelisten ved at indsætte ét `<li>Navn</li>` pr. gæst i
   `<ul class="guest-list">`. Fjern samtidig afsnittet med `class="guest-empty"`.
 - Udseendet ligger i `styles.css`.
-- `assets/invitation.pdf` er den originale, udsendte invitation.
-  `assets/invitation.jpg` er en billedkopi til visning på siden.
-  Invitationens personlige tiltale er bevaret i originalen.
+- `assets/invitation.png` er invitationen uden gæstenavne, som vises på siden.
+  `assets/invitation.pdf` er en PDF-kopi lavet fra det samme billede.
 
 Siden og dens filer er offentlige, inklusive telefonnumre og den gæsteliste,
 der senere indsættes. SU-fristen gengives som en oplysning fra den udsendte
