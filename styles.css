@@ -72,16 +72,7 @@ h3 { margin-bottom: 1.4rem; font-size: 1.9rem; }
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1.25fr 1fr;
-  align-items: center;
-  gap: 4rem;
   padding-block: 6rem 6.5rem;
-}
-
-.hero-background {
-  aspect-ratio: 4 / 5;
-  background: radial-gradient(ellipse at 75% 15%, #f9f4e9, #eadbc7);
 }
 
 .hero-copy > p:not(.eyebrow):not(.signature) { max-width: 33rem; color: var(--muted); }
@@ -147,8 +138,7 @@ footer { padding-block: 2.5rem; border-top: 1px solid var(--line); text-align: c
 
 @media (max-width: 800px) {
   .site-header, main, footer { width: min(620px, calc(100% - 2.5rem)); }
-  .hero { grid-template-columns: 1fr; gap: 3rem; padding-block: 3.5rem; }
-  .hero-background { width: min(310px, 85%); justify-self: center; }
+  .hero { padding-block: 3.5rem; }
   h1 { font-size: clamp(2.8rem, 8.5vw, 4rem); }
   .invitation-section { padding-block: 3rem; }
   .invitation-layout { grid-template-columns: 1fr; gap: 2.5rem; }
