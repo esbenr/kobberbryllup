@@ -72,10 +72,6 @@ h3 { margin-bottom: 1.4rem; font-size: 1.9rem; }
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1.25fr 1fr;
-  align-items: center;
-  gap: 4rem;
   padding-block: 6rem 6.5rem;
 }
 
@@ -102,24 +98,6 @@ h3 { margin-bottom: 1.4rem; font-size: 1.9rem; }
 }
 
 .button:hover { background: #754026; }
-
-.anniversary {
-  display: grid;
-  place-items: center;
-  aspect-ratio: 4 / 5;
-  padding: 2rem;
-  border: 1px solid #bc9472;
-  border-radius: 50% 50% 3px 3px;
-  background: radial-gradient(ellipse at 75% 15%, #f9f4e9, #eadbc7);
-  box-shadow: inset 0 0 0 9px var(--paper), inset 0 0 0 10px #d8bda2;
-  color: var(--copper);
-}
-
-.anniversary-inner { text-align: center; }
-.anniversary-small { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .22em; }
-.anniversary-number { display: block; font: clamp(5rem, 10vw, 9.5rem)/1.2 var(--serif); letter-spacing: -.075em; }
-.anniversary-years { display: block; font: italic 2rem var(--serif); }
-.anniversary-rule { display: block; width: 3rem; height: 1px; margin: 2rem auto; background: #bc9472; }
 
 .invitation-section { padding-block: 4.5rem 5.5rem; border-top: 1px solid var(--line); }
 .section-heading { margin-bottom: 3rem; text-align: center; }
@@ -160,10 +138,8 @@ footer { padding-block: 2.5rem; border-top: 1px solid var(--line); text-align: c
 
 @media (max-width: 800px) {
   .site-header, main, footer { width: min(620px, calc(100% - 2.5rem)); }
-  .hero { grid-template-columns: 1fr; gap: 3rem; padding-block: 3.5rem; }
+  .hero { padding-block: 3.5rem; }
   h1 { font-size: clamp(2.8rem, 8.5vw, 4rem); }
-  .anniversary { width: min(310px, 85%); justify-self: center; }
-  .anniversary-number { font-size: 6.5rem; }
   .invitation-section { padding-block: 3rem; }
   .invitation-layout { grid-template-columns: 1fr; gap: 2.5rem; }
   .invitation-image { max-width: 420px; width: calc(100% - 1rem); justify-self: center; }
