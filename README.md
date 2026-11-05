@@ -12,6 +12,7 @@ byggetrin eller runtime-server.
 - Udseendet ligger i `styles.css`.
 - `assets/invitation.png` er invitationen uden gæstenavne, som vises på siden.
   `assets/invitation.pdf` er en PDF-kopi lavet fra det samme billede.
+- `assets/esben-eva-maria.jpg` (og den mindre `-900`-udgave til mobil) er billedet øverst på siden.
 
 Siden og dens filer er offentlige, inklusive telefonnumre og den gæsteliste,
 der senere indsættes. SU-fristen gengives som en oplysning fra den udsendte
