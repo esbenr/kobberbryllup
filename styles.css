@@ -141,6 +141,7 @@ h3 { margin-bottom: 1.4rem; font-size: 1.9rem; }
 .guest-list { padding-left: 1.3rem; }
 .guest-list:empty { display: none; }
 .guest-list li { padding-block: .25rem; }
+.guest-group { margin: 2rem 0 .6rem; font-size: 1.4rem; color: var(--copper); }
 
 footer { padding-block: 2.5rem; border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: .8rem; }
 .footer-names { margin-bottom: .6rem; color: var(--ink); font: italic 1.6rem var(--serif); }
