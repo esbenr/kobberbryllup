@@ -21,8 +21,6 @@ byggetrin eller runtime-server.
   så siden ikke henter noget fra tredjeparter.
 
 Siden og dens filer er offentlige, inklusive telefonnumre og gæstelisten.
-SU-fristen gengives som en oplysning fra den udsendte invitation, ikke som en
-ny tilmeldingsmulighed.
 
 ## GitHub Pages
 
