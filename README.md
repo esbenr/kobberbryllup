@@ -7,8 +7,8 @@ En enkel, responsiv hjemmeside til vores kobberbryllup, bygget til GitHub Pages.
 byggetrin eller runtime-server.
 
 - Redigér hilsen, festoplysninger, toastmaster og ønskesky i `index.html`.
-- Udfyld gæstelisten ved at indsætte ét `<li>Navn</li>` pr. gæst i
-  `<ul class="guest-list">`. Fjern samtidig afsnittet med `class="guest-empty"`.
+- Gæstelisten står som ét `<li>Navn</li>` pr. gæst eller par i
+  `<ul class="guest-list">`. Tilføj eller fjern linjer dér.
 - Udseendet ligger i `styles.css`.
 - `assets/invitation.png` er invitationen uden gæstenavne, som vises på siden.
   `assets/invitation.pdf` er en PDF-kopi lavet fra det samme billede.
