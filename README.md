@@ -12,11 +12,17 @@ byggetrin eller runtime-server.
 - Udseendet ligger i `styles.css`.
 - `assets/invitation.png` er invitationen uden gæstenavne, som vises på siden.
   `assets/invitation.pdf` er en PDF-kopi lavet fra det samme billede.
-- `assets/esben-eva-maria.jpg` (og den mindre `-900`-udgave til mobil) er billedet øverst på siden.
+- `assets/photos/` indeholder billederne: `mark.jpg` er det store billede
+  øverst, `kys.jpg` står ved hilsenen, og `ringe.jpg`, `skoven.jpg`,
+  `buket.jpg` og `kram.jpg` udgør billedrækken. Udskift en fil med et nyt
+  billede med samme navn for at skifte det. Filerne med `-900`/`-1200` er
+  mindre udgaver til mobil.
+- Skrifttypen Cormorant Garamond ligger lokalt i `assets/fonts/` (OFL-licens),
+  så siden ikke henter noget fra tredjeparter.
 
-Siden og dens filer er offentlige, inklusive telefonnumre og den gæsteliste,
-der senere indsættes. SU-fristen gengives som en oplysning fra den udsendte
-invitation, ikke som en ny tilmeldingsmulighed.
+Siden og dens filer er offentlige, inklusive telefonnumre og gæstelisten.
+SU-fristen gengives som en oplysning fra den udsendte invitation, ikke som en
+ny tilmeldingsmulighed.
 
 ## GitHub Pages
 

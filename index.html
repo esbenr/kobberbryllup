@@ -3,32 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#eee0c8">
+    <meta name="theme-color" content="#1f2b25">
     <meta name="description" content="Vi fejrer kobberbryllup! Find invitationen, vores ønsker og gæstelisten til Esben og Eva-Marias fest den 5. december 2026.">
     <title>Kobberbryllup · Esben &amp; Eva-Maria</title>
+    <link rel="preload" href="assets/fonts/cormorant-garamond.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <a class="skip-link" href="#indhold">Gå til indhold</a>
-    <header class="site-header">
-      <a class="wordmark" href="#velkommen" aria-label="Esben og Eva-Maria – forsiden">E <span>&amp;</span> E</a>
-      <span class="header-date">5. december 2026</span>
+
+    <header class="hero" id="velkommen">
+      <img class="hero-image" src="assets/photos/mark.jpg" srcset="assets/photos/mark-1200.jpg 1200w, assets/photos/mark.jpg 2000w" sizes="100vw" width="2000" height="1333" alt="Sort-hvidt billede af Esben og Eva-Maria på deres bryllupsdag, stående i en åben mark med brudeslør i vinden.">
+      <div class="hero-content">
+        <p class="eyebrow">Kobberbryllup · 12½ år</p>
+        <h1>Esben <span>&amp;</span> <span class="name">Eva-Maria</span></h1>
+        <p class="hero-date"><time datetime="2026-12-05T17:00:00+01:00">Lørdag 5. december 2026</time> · Skovby Forsamlingshus</p>
+        <nav class="hero-links" aria-label="Find rundt på siden">
+          <a href="#invitation">Invitation</a>
+          <a href="#onsker">Ønsker</a>
+          <a href="#gaester">Gæsteliste</a>
+        </nav>
+      </div>
     </header>
 
     <main id="indhold">
-      <section class="hero" id="velkommen" aria-labelledby="velkommen-titel">
-        <img class="hero-photo" src="assets/esben-eva-maria.jpg" srcset="assets/esben-eva-maria-900.jpg 900w, assets/esben-eva-maria.jpg 1600w" sizes="(max-width: 800px) 100vw, 1100px" width="1600" height="1066" alt="Eva-Maria kysser Esben på kinden på deres bryllupsdag under en blå sommerhimmel.">
-        <div class="hero-copy">
-          <p class="eyebrow">12½ år med kærlighed</p>
-          <h1 id="velkommen-titel">Vi skal fejre<br>kobberbryllup<span class="copper">.</span></h1>
+      <section class="welcome" aria-labelledby="velkommen-titel">
+        <img class="welcome-image" src="assets/photos/kys.jpg" srcset="assets/photos/kys-900.jpg 900w, assets/photos/kys.jpg 1600w" sizes="(max-width: 800px) 100vw, 50vw" width="1600" height="1066" loading="lazy" alt="Eva-Maria kysser Esben på kinden på deres bryllupsdag under en blå sommerhimmel.">
+        <div class="welcome-copy">
+          <p class="eyebrow">En hilsen fra os</p>
+          <h2 id="velkommen-titel">Vi skal fejre kobberbryllup</h2>
           <p class="intro">Når man har det sjovt, går tiden stærkt. Derfor er det nu allerede 12½ år siden, vi sagde ja til hinanden.</p>
           <p>Vi glæder os til at fejre det sammen med jer og til en aften fyldt med grin, gode minder og dejligt selskab.</p>
-          <p class="signature">Kærlig hilsen<br><span>Esben &amp; Eva-Maria</span></p>
-          <div class="hero-links" aria-label="Find rundt på siden">
-            <a class="button" href="#invitation">Se invitationen <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="#onsker">Vores ønsker</a>
-            <a class="text-link" href="#gaester">Gæsteliste</a>
-          </div>
+          <p class="signature">Kærlig hilsen<span>Esben &amp; Eva-Maria</span></p>
         </div>
       </section>
 
@@ -55,99 +61,114 @@
               </div>
             </dl>
             <p class="invitation-note">På den udsendte invitation står der SU senest den 1. september 2026 på <a href="tel:+4521821454">21 82 14 54</a>.</p>
-            <a class="text-link" href="assets/invitation.pdf">Åbn invitationen <span class="file-type">(PDF)</span> <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="assets/invitation.pdf">Åbn invitationen <span class="file-type">(PDF)</span> <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>
+
+      <div class="photo-band">
+        <img src="assets/photos/ringe.jpg" width="1000" height="667" loading="lazy" alt="Esben og Eva-Marias hænder med vielsesringe.">
+        <img src="assets/photos/skoven.jpg" width="1000" height="667" loading="lazy" alt="Esben og Eva-Maria tæt sammen foran en stak træstammer i skoven.">
+        <img src="assets/photos/buket.jpg" width="1000" height="667" loading="lazy" alt="Nærbillede af brudebuketten med hvide roser og lilla blomster.">
+        <img src="assets/photos/kram.jpg" width="1000" height="667" loading="lazy" alt="Eva-Maria smiler, mens hun krammer Esben ude på heden.">
+      </div>
 
       <section class="toastmaster" aria-labelledby="toastmaster-titel">
         <p class="eyebrow">En tale, en sang eller en overraskelse?</p>
         <h2 id="toastmaster-titel">Festlige indslag er velkomne</h2>
         <p>Har du underholdning eller andet med, så tag fat i vores toastmaster, <strong>Martin Bjørnskov</strong>. Han hjælper med at finde plads til dit indslag i løbet af aftenen.</p>
-        <a class="phone-link" href="tel:+4523456554"><span class="phone-label">Ring til Martin</span>23 45 65 54 <span aria-hidden="true">↗</span></a>
+        <a class="phone-link" href="tel:+4523456554"><span class="phone-label">Ring til Martin</span>23 45 65 54</a>
       </section>
 
-      <div class="closing-grid">
-        <section class="wishes" id="onsker" aria-labelledby="onsker-titel">
-          <p class="eyebrow">Lidt inspiration</p>
-          <h2 id="onsker-titel">Vores ønsker</h2>
-          <p>Vi har samlet vores ønsker på Ønskeskyen, så de er nemme at finde ét sted.</p>
-          <a class="button" href="https://onskeskyen.dk/da/wishlists/v1FMCZPiD21Qei2M">Besøg vores ønskesky <span aria-hidden="true">↗</span></a>
-        </section>
+      <section class="wishes" id="onsker" aria-labelledby="onsker-titel">
+        <p class="eyebrow">Lidt inspiration</p>
+        <h2 id="onsker-titel">Vores ønsker</h2>
+        <p>Vi har samlet vores ønsker på Ønskeskyen, så de er nemme at finde ét sted.</p>
+        <a class="button" href="https://onskeskyen.dk/da/wishlists/v1FMCZPiD21Qei2M">Besøg vores ønskesky <span aria-hidden="true">↗</span></a>
+      </section>
 
-        <section class="guests" id="gaester" aria-labelledby="gaester-titel">
+      <section class="guests" id="gaester" aria-labelledby="gaester-titel">
+        <div class="section-heading">
           <p class="eyebrow">Det bedste selskab</p>
           <h2 id="gaester-titel">Gæstelisten</h2>
-          <h3 class="guest-group">Familie</h3>
-          <ul class="guest-list">
-            <li>Bodil &amp; Hans Otto</li>
-            <li>Mikkel &amp; Kia</li>
-            <li>Tobias &amp; Marlene</li>
-            <li>Markus &amp; Emilie</li>
-            <li>Dinah</li>
-            <li>Lunah</li>
-            <li>Astrid &amp; Klaus</li>
-            <li>Diana &amp; Morten</li>
-            <li>Malte</li>
-            <li>Louise &amp; Fie</li>
-            <li>Tilde &amp; Kasper</li>
-            <li>Vibeke</li>
-          </ul>
-          <h3 class="guest-group">Venner</h3>
-          <ul class="guest-list">
-            <li>Kit &amp; Jesper</li>
-            <li>Nanna Liv</li>
-            <li>Miriam &amp; Rene</li>
-            <li>Peter Liboriussen</li>
-            <li>Janne &amp; Mike</li>
-            <li>Line &amp; Martin</li>
-            <li>Torben &amp; Chenette</li>
-            <li>Thomas KK</li>
-            <li>Anne Marie &amp; Salik</li>
-            <li>Tina &amp; Jimmi</li>
-            <li>Henning &amp; Olafia</li>
-            <li>Britt Vejers</li>
-            <li>Ann Mai &amp; Jakob</li>
-            <li>Lars Valsted &amp; Dorthe Valsted</li>
-            <li>Susanne</li>
-            <li>Nanna &amp; Rune</li>
-            <li>Kasper Elmose</li>
-            <li>Karina Liboriussen</li>
-            <li>Peter Johansen</li>
-            <li>Jesper Johansen</li>
-            <li>Jesper Sejersen</li>
-            <li>David Sommer</li>
-            <li>Niels Ørts</li>
-            <li>Peter Smith</li>
-            <li>Johan Vium</li>
-            <li>Mathias Klokker</li>
-          </ul>
-          <h3 class="guest-group">Kolleger</h3>
-          <ul class="guest-list">
-            <li>Kasper Munck</li>
-            <li>Stefan K.</li>
-            <li>Demmi</li>
-            <li>Birgitte</li>
-            <li>Søren K</li>
-            <li>Lars C</li>
-            <li>Kenn Lindhardt</li>
-            <li>Martin Dybdahl</li>
-            <li>Nate Brown</li>
-            <li>Kasper Sørensen</li>
-            <li>Jakob</li>
-            <li>Claire Schembri</li>
-            <li>Thomas</li>
-            <li>Jeppe</li>
-            <li>Dennis</li>
-          </ul>
-        </section>
-      </div>
+        </div>
+        <div class="guest-columns">
+          <div class="guest-column">
+            <h3 class="guest-group">Familie</h3>
+            <ul class="guest-list">
+              <li>Bodil &amp; Hans Otto</li>
+              <li>Mikkel &amp; Kia</li>
+              <li>Tobias &amp; Marlene</li>
+              <li>Markus &amp; Emilie</li>
+              <li>Dinah</li>
+              <li>Lunah</li>
+              <li>Astrid &amp; Klaus</li>
+              <li>Diana &amp; Morten</li>
+              <li>Malte</li>
+              <li>Louise &amp; Fie</li>
+              <li>Tilde &amp; Kasper</li>
+              <li>Vibeke</li>
+            </ul>
+          </div>
+          <div class="guest-column">
+            <h3 class="guest-group">Venner</h3>
+            <ul class="guest-list">
+              <li>Kit &amp; Jesper</li>
+              <li>Nanna Liv</li>
+              <li>Miriam &amp; Rene</li>
+              <li>Peter Liboriussen</li>
+              <li>Janne &amp; Mike</li>
+              <li>Line &amp; Martin</li>
+              <li>Torben &amp; Chenette</li>
+              <li>Thomas KK</li>
+              <li>Anne Marie &amp; Salik</li>
+              <li>Tina &amp; Jimmi</li>
+              <li>Henning &amp; Olafia</li>
+              <li>Britt Vejers</li>
+              <li>Ann Mai &amp; Jakob</li>
+              <li>Lars Valsted &amp; Dorthe Valsted</li>
+              <li>Susanne</li>
+              <li>Nanna &amp; Rune</li>
+              <li>Kasper Elmose</li>
+              <li>Karina Liboriussen</li>
+              <li>Peter Johansen</li>
+              <li>Jesper Johansen</li>
+              <li>Jesper Sejersen</li>
+              <li>David Sommer</li>
+              <li>Niels Ørts</li>
+              <li>Peter Smith</li>
+              <li>Johan Vium</li>
+              <li>Mathias Klokker</li>
+            </ul>
+          </div>
+          <div class="guest-column">
+            <h3 class="guest-group">Kolleger</h3>
+            <ul class="guest-list">
+              <li>Kasper Munck</li>
+              <li>Stefan K.</li>
+              <li>Demmi</li>
+              <li>Birgitte</li>
+              <li>Søren K</li>
+              <li>Lars C</li>
+              <li>Kenn Lindhardt</li>
+              <li>Martin Dybdahl</li>
+              <li>Nate Brown</li>
+              <li>Kasper Sørensen</li>
+              <li>Jakob</li>
+              <li>Claire Schembri</li>
+              <li>Thomas</li>
+              <li>Jeppe</li>
+              <li>Dennis</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
       <p class="footer-names">Esben &amp; Eva-Maria</p>
       <p>Vi glæder os til at se jer · 5. december 2026</p>
-      <a class="text-link" href="#velkommen">Til toppen <span aria-hidden="true">↑</span></a>
+      <a href="#velkommen">Til toppen <span aria-hidden="true">↑</span></a>
     </footer>
   </body>
 </html>
