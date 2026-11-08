@@ -95,7 +95,21 @@ h3 { margin-bottom: 1.2rem; font-size: 1.9rem; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 65% 40%;
+  object-position: var(--pos, 50% 40%);
+  opacity: 0;
+  animation: hero-fade 35s infinite both;
+}
+
+.hero-image:nth-child(1) { opacity: 1; animation-delay: -1.4s; }
+.hero-image:nth-child(2) { animation-delay: 5.6s; }
+.hero-image:nth-child(3) { animation-delay: 12.6s; }
+.hero-image:nth-child(4) { animation-delay: 19.6s; }
+.hero-image:nth-child(5) { animation-delay: 26.6s; }
+
+@keyframes hero-fade {
+  0% { opacity: 0; }
+  4%, 20% { opacity: 1; }
+  24%, 100% { opacity: 0; }
 }
 
 .hero::after {
@@ -262,4 +276,5 @@ footer a:focus-visible { outline-color: var(--copper-light); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .invitation-image { transition: none; }
+  .hero-image { animation: none; }
 }
