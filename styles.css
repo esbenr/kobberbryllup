@@ -44,6 +44,8 @@ body {
 }
 
 img { display: block; max-width: 100%; height: auto; }
+[hidden] { display: none !important; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 a { color: var(--copper); text-underline-offset: .25em; }
 a:hover { text-decoration-thickness: 2px; }
 a:focus-visible { outline: 3px solid var(--copper); outline-offset: 4px; }
@@ -214,6 +216,21 @@ main > section { width: var(--wrap); margin-inline: auto; }
 
 .wishes { padding-block: clamp(4.5rem, 10vw, 7rem); text-align: center; }
 .wishes > p:not(.eyebrow) { max-width: 30rem; margin-inline: auto; margin-bottom: 2rem; color: var(--muted); }
+
+.photo-upload { padding-block: clamp(3.5rem, 8vw, 5rem) clamp(4.5rem, 10vw, 7rem); border-top: 1px solid var(--line); text-align: center; }
+.photo-upload > p:not(.eyebrow, .upload-summary) { max-width: 32rem; margin-inline: auto; margin-bottom: 2rem; color: var(--muted); }
+.upload-button { cursor: pointer; }
+.upload-button:focus-within { outline: 3px solid var(--copper); outline-offset: 4px; }
+.upload-summary { min-height: 1.7em; margin-block: 1.5rem .5rem; color: var(--muted); font-size: .95rem; }
+.upload-list { display: grid; grid-template-columns: minmax(0, 1fr); gap: .5rem; max-width: 32rem; margin: 0 auto; padding: 0; list-style: none; text-align: left; }
+.upload-list li { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem 1rem; padding: .7rem 1rem; background: var(--surface); border-radius: .6rem; font-size: .9rem; }
+.upload-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.upload-status { color: var(--muted); }
+.upload-list li[data-state="done"] .upload-status { color: #2f6b45; }
+.upload-list li[data-state="error"] .upload-status { color: #a1301e; }
+.upload-retry { padding: .3rem .9rem; background: transparent; border: 1px solid var(--copper); border-radius: 999px; color: var(--copper); font: inherit; cursor: pointer; }
+.upload-retry:hover { background: var(--copper); color: #fff; }
+.upload-retry:focus-visible { outline: 3px solid var(--copper); outline-offset: 3px; }
 
 .guests { padding-block: clamp(3.5rem, 8vw, 5rem) clamp(4.5rem, 10vw, 7rem); border-top: 1px solid var(--line); }
 .guest-columns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; align-items: start; }

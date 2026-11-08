@@ -21,6 +21,7 @@
         <nav class="hero-links" aria-label="Find rundt på siden">
           <a href="#invitation">Invitation</a>
           <a href="#onsker">Ønsker</a>
+          <a href="#billeder" data-upload hidden>Billeder</a>
           <a href="#gaester">Gæsteliste</a>
         </nav>
       </div>
@@ -83,6 +84,18 @@
         <h2 id="onsker-titel">Vores ønsker</h2>
         <p>Vi har samlet vores ønsker på Ønskeskyen, så de er nemme at finde ét sted.</p>
         <a class="button" href="https://onskeskyen.dk/da/wishlists/v1FMCZPiD21Qei2M">Besøg vores ønskesky <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="photo-upload" id="billeder" aria-labelledby="billeder-titel" data-upload data-upload-url="" hidden>
+        <p class="eyebrow">Del øjeblikkene</p>
+        <h2 id="billeder-titel">Del jeres billeder</h2>
+        <p>Tag billeder i løbet af aftenen, eller vælg dem fra din telefon. De bliver sendt direkte til os i fuld opløsning – uden login.</p>
+        <label class="button upload-button">
+          Tag eller vælg billeder
+          <input class="visually-hidden" type="file" accept="image/*" multiple>
+        </label>
+        <p class="upload-summary" aria-live="polite"></p>
+        <ul class="upload-list"></ul>
       </section>
 
       <section class="guests" id="gaester" aria-labelledby="gaester-titel">
@@ -168,5 +181,6 @@
       <p>Vi glæder os til at se jer · 5. december 2026</p>
       <a href="#velkommen">Til toppen <span aria-hidden="true">↑</span></a>
     </footer>
+    <script src="upload.js" defer></script>
   </body>
 </html>
