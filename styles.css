@@ -182,7 +182,7 @@ main > section { width: var(--wrap); margin-inline: auto; }
 .invitation-image { display: block; border-radius: .5rem; overflow: hidden; box-shadow: 0 30px 60px -20px #3b25144d; transition: transform .3s; }
 .invitation-image:hover { transform: translateY(-4px); }
 .invitation-image img { width: 100%; }
-.event-details { margin-block: 2rem; }
+.event-details { margin-block: 0 2rem; }
 .event-details > div { padding-block: 1rem; border-bottom: 1px solid var(--line); }
 .event-details > div:first-child { border-top: 1px solid var(--line); }
 .event-details dt { color: var(--copper); text-transform: uppercase; letter-spacing: .16em; font-size: .72rem; font-weight: 600; }
