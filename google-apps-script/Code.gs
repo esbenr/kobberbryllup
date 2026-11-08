@@ -1,4 +1,4 @@
-const FOLDER_ID = 'INDSÆT_MAPPE_ID_HER';
+const FOLDER_ID = '1Nkn66Dzndgs6oddmM-fsGd7zEsfL50Kf';
 const MAX_BYTES = 40 * 1024 * 1024;
 
 function doGet() {
