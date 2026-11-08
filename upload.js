@@ -102,7 +102,7 @@ if (uploadUrl) {
   function updateSummary() {
     const busy = active + queue.length;
     if (busy) {
-      summary.textContent = `Sender billeder … ${sent} af ${total} er sendt. Hold siden åben, til de er sendt.`;
+      summary.textContent = `Sender billeder … ${sent} af ${total} er sendt.\nHold siden åben, til de er sendt.`;
     } else if (sent < total) {
       summary.textContent = `${sent} af ${total} billeder er sendt. Tryk “Prøv igen” ved dem, der mangler.`;
     } else {

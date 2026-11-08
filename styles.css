@@ -221,7 +221,8 @@ main > section { width: var(--wrap); margin-inline: auto; }
 .photo-upload > p:not(.eyebrow, .upload-summary) { max-width: 32rem; margin-inline: auto; margin-bottom: 2rem; color: var(--muted); }
 .upload-button { cursor: pointer; }
 .upload-button:focus-within { outline: 3px solid var(--copper); outline-offset: 4px; }
-.upload-summary { min-height: 1.7em; margin-block: 1.5rem .5rem; color: var(--muted); font-size: .95rem; }
+.upload-summary { min-height: 1.7em; margin-block: 1.5rem .5rem; color: var(--muted); font-size: .95rem; white-space: pre-line; }
+.upload-summary:empty { min-height: 0; margin: 0; }
 .upload-list { display: grid; grid-template-columns: minmax(0, 1fr); gap: .5rem; max-width: 32rem; margin: 0 auto; padding: 0; list-style: none; text-align: left; }
 .upload-list li { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem 1rem; padding: .7rem 1rem; background: var(--surface); border-radius: .6rem; font-size: .9rem; }
 .upload-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
