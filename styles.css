@@ -23,6 +23,7 @@
   --copper: #8f4b28;
   --copper-light: #e3a77f;
   --forest: #1f2b25;
+  --plum: #261a33;
   --line: #e2d7c9;
   --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -199,7 +200,7 @@ main > section { width: var(--wrap); margin-inline: auto; }
 
 .toastmaster {
   padding: clamp(3.5rem, 8vw, 6rem) 1.5rem;
-  background: var(--forest);
+  background: var(--plum);
   border-radius: 1.5rem;
   color: #f3ece2;
   text-align: center;
@@ -240,7 +241,7 @@ main > section { width: var(--wrap); margin-inline: auto; }
 .guest-list li { padding-block: .45rem; border-bottom: 1px solid var(--line); }
 .guest-list li:last-child { border-bottom: 0; }
 
-footer { padding-block: 4rem; background: var(--forest); color: #e6ddd0; text-align: center; font-size: .85rem; }
+footer { padding-block: 4rem; background: var(--plum); color: #e6ddd0; text-align: center; font-size: .85rem; }
 footer a { color: var(--copper-light); }
 footer a:focus-visible { outline-color: var(--copper-light); }
 .footer-names { margin-bottom: .4rem; color: #fff; font: italic 2.2rem var(--serif); }
