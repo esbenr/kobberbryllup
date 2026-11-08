@@ -184,7 +184,6 @@ main > section { width: var(--wrap); margin-inline: auto; }
 .invitation-image img { width: 100%; }
 .event-details { margin-block: 0 2rem; }
 .event-details > div { padding-block: 1rem; border-bottom: 1px solid var(--line); }
-.event-details > div:first-child { border-top: 1px solid var(--line); }
 .event-details dt { color: var(--copper); text-transform: uppercase; letter-spacing: .16em; font-size: .72rem; font-weight: 600; }
 .event-details dd { margin: .3rem 0 0; font: 1.5rem/1.3 var(--serif); font-variant-numeric: lining-nums; }
 .file-type { font-size: .78rem; }
