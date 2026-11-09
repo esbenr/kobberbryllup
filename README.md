@@ -38,9 +38,11 @@ relative, så siden også virker under GitHub Pages' repository-sti.
 
 ## Billedupload til Google Drive
 
-Gæster kan tage eller vælge billeder på telefonen uden login. Billederne gemmes
-i fuld opløsning i en mappe i jeres Google Drive via et lille Google Apps
-Script (`google-apps-script/Code.gs`).
+Gæster kan tage eller vælge billeder og videoer på telefonen uden login.
+Filerne gemmes i fuld opløsning i en mappe i jeres Google Drive via et lille
+Google Apps Script (`google-apps-script/Code.gs`). Hver fil må højst fylde
+35 MB, fordi Apps Script højst modtager ca. 50 MB pr. forespørgsel, og filen
+fylder ca. en tredjedel mere, når den sendes.
 
 1. Opret en mappe i Google Drive, fx "Kobberbryllup billeder". Mappe-id'et er
    den sidste del af adressen: `drive.google.com/drive/folders/<MAPPE-ID>`.

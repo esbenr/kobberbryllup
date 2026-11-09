@@ -10,6 +10,8 @@ if (uploadUrl) {
   const queue = [];
   const maxParallel = 2;
   const maxAttempts = 4;
+  const maxBytes = 35 * 1024 * 1024;
+  const videoTypes = { mov: 'video/quicktime', mp4: 'video/mp4', m4v: 'video/x-m4v', '3gp': 'video/3gpp', webm: 'video/webm' };
   let active = 0;
   let sent = 0;
   let total = 0;
@@ -28,10 +30,15 @@ if (uploadUrl) {
     const name = document.createElement('span');
     const status = document.createElement('span');
     name.className = 'upload-name';
-    name.textContent = file.name || 'Billede';
+    name.textContent = file.name || 'Fil';
     status.className = 'upload-status';
     item.append(name, status);
     list.prepend(item);
+    if (file.size > maxBytes) {
+      item.dataset.state = 'error';
+      status.textContent = 'For stor (maks. 35 MB)';
+      return;
+    }
     total++;
     addToQueue({ file, item, status });
   }
@@ -63,7 +70,7 @@ if (uploadUrl) {
     } catch {
       return fail(job);
     }
-    const body = JSON.stringify({ name: job.file.name, type: job.file.type || 'image/jpeg', data });
+    const body = JSON.stringify({ name: job.file.name, type: guessType(job.file), data });
     for (let attempt = 1; attempt <= maxAttempts; attempt++) {
       try {
         const response = await fetch(uploadUrl, { method: 'POST', body });
@@ -102,12 +109,18 @@ if (uploadUrl) {
   function updateSummary() {
     const busy = active + queue.length;
     if (busy) {
-      summary.textContent = `Sender billeder … ${sent} af ${total} er sendt.\nHold siden åben, til de er sendt.`;
+      summary.textContent = `Sender … ${sent} af ${total} er sendt.\nHold siden åben, til de er sendt.`;
     } else if (sent < total) {
-      summary.textContent = `${sent} af ${total} billeder er sendt. Tryk “Prøv igen” ved dem, der mangler.`;
+      summary.textContent = `${sent} af ${total} filer er sendt. Tryk “Prøv igen” ved dem, der mangler.`;
     } else {
-      summary.textContent = `${sent} af ${total} billeder er sendt. Tusind tak!`;
+      summary.textContent = `${sent} af ${total} filer er sendt. Tusind tak!`;
     }
+  }
+
+  function guessType(file) {
+    if (file.type) return file.type;
+    const extension = file.name.split('.').pop().toLowerCase();
+    return videoTypes[extension] || 'image/jpeg';
   }
 
   function readAsBase64(file) {
